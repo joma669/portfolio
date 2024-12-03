@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio Personal Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/cd5acf3899.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <img src="images/gacha.png" class="logo">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">Acerca</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#portfolio">Portafolio</a></li>
+                <li><a href="#contact">Contacto</a></li>
+                <i class="fa-solid fa-xmark" onclick="closeMenu()"></i>
+            </ul>
+            <img src="images/moon.png" id="icon">
+            <i class="fa-solid fa-bars" onclick="showMenu()"></i>
+        </nav>
+        <div class="header-text" data-aos="zoom-out-right">
+            <p>Desarrollador Web</p>
+            <h1>Hola, soy <span>Jose</span><br>molina como vas!</h1>
+        </div>
+    </div>
+</div>
+
+<!-- ACERCA -->
+
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/xaxa.png" data-aos="fade-left">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">Acerca de mi</h1>
+                <p>Soy un chico de 18 años alegre y que le encanta compartir tiempo con los demas, el cual le gusta mucho el mundo de la programacion y la tecnologia. puedes ver mis habilidades, experiencia y educacion en la parte inferior. </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Habilidades</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experiencia</p>
+                    <p class="tab-links" onclick="opentab('services')">Educacion</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Desarrollo Web</span><br>Desarrollo de sitios web con tecnologías como HTML, CSS y JavaScript.</li>
+                        <li><span>Desarrollo Web</span><br>Desarrollo de sitios web con tecnologías como HTML, CSS y JavaScript.</li>
+                        <li><span>Desarrollo Web</span><br>Desarrollo de sitios web con tecnologías como HTML, CSS y JavaScript.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2023 - actual</span><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, quos.</li>
+                        <li><span>2025 - actual</span><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, quos.</li>
+                        <li><span>2024 - actual</span><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, quos.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="services">
+                    <ul>
+                        <li><span>Institucion X</span><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, quos.</li>
+                        <li><span>SENA</span><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, quos.</li>
+                        <li><span>Universidad X</span><br>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quia, quos.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- SERVICIOS -->
+<div id="servicios">
+    <div class="container">
+        <h1 class="sub-title">Servicios</h1>
+        <div class="services-list">
+            <div>
+                <i class="fa-solid fa-code"></i>
+                <h2>Desarrollo Web</h2>
+                <p>Me desempeño en el desarrollo de sitios web con tecnologías como HTML, CSS y JavaScript</p>
+            </div>
+            <div>
+                <i class="fa-solid fa-crop"></i>                
+                <h2>Diseñador UX/UI</h2>
+                <p>Soy un diseñador UX/UI.</p>
+            </div>
+            <div>
+                <i class="fa-brands fa-app-store"></i>                
+                <h2>Desarrollo App</h2>
+                <p>Desarrollo apps con tecnologías como Flutter.</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- PORTAFOLIO -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Portafolio</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/keep.png">
+                <div class="layer">
+                    <h3>Portafolio Web</h3>
+                    <p>paginas web con tecnologías como HTML, CSS y JavaScript.</p>
+                    <a href="https://joma669.github.io/Fitclubgg/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/it.png">
+                <div class="layer">
+                    <h3>Portafolio Web</h3>
+                    <p>paginas web con tecnologías como HTML, CSS y JavaScript.</p>
+                    <a href="https://joma669.github.io/Logistica/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/real.png">
+                <div class="layer">
+                    <h3>Portafolio Web</h3>
+                    <p>paginas web con tecnologías como HTML, CSS y JavaScript.</p>
+                    <a href="https://joma669.github.io/Fitpage/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                </div>
+            </div>
+        </div>
+        <a href="https://github.com/dashboard" class="btn">Ver mas</a>
+    </div>
+</div>
+
+<!-- CONTACTO -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contactame</h1>
+                <p><i class="fa-solid fa-paper-plane"></i>6V5d0@example.com</p>
+                <p><i class="fa-solid fa-phone"></i>31012312331</p>
+                <div class="social-icons">
+                    <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/joma669"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="images/curriculum.pdf" download class="btn btn2">Descargar CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Tu Nombre" required>
+                    <input type="email" name="Email" placeholder="Tu Email" required>
+                    <textarea name="Message" rows="6" placeholder="Tu Mensaje"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright <i class="fa-regular fa-copyright"></i> Jose Molina - Larva</p>
+    </div>
+</div>
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+</script>
+
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+
+    function showMenu(){
+        sidemenu.style.right = "0";
+    }
+    function closeMenu(){
+        sidemenu.style.right = "-200px";
+    }
+</script>
+
+<script>
+    var icon = document.getElementById("icon");
+
+    icon.onclick = function(){
+        document.body.classList.toggle("dark-theme");
+        if(document.body.classList.contains("dark-theme")){
+            icon.src = "images/sun.png";
+        }else{
+            icon.src = "images/moon.png";
+        }
+    }
+</script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+<script>
+    AOS.init();
+</script>
+</body>
+</html>
